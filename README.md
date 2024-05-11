@@ -91,6 +91,7 @@ response:
 ```
 
 ## API Documentation
+#### Base URL : http://ec2-13-233-255-18.ap-south-1.compute.amazonaws.com:8001
 The API provides the following routes:
 | Method   | URL                                      | Description                              |
 | -------- | ---------------------------------------- | ---------------------------------------- |
