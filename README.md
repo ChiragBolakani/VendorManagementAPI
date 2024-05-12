@@ -107,3 +107,99 @@ The API provides the following routes:
 | `POST`   | `/api/purchase_orders`                             | Create a new purchase order.                       |
 | `PUT` | `/api/purchase_orders/28` | Update data in purchase order 28.                    |
 | `DELETE`  | `/api/purchase_orders/28`                          | Delete purchase order #28.                 |
+
+### Usage
+### Create new vendor
+`POST /api/vendors`
+
+request body : 
+```json
+{
+  "name": "test",
+  "contact_details": "123456789",
+  "address": "4th street, London"
+}
+```
+response :
+```json
+{
+  "vendor_code": "f7b01c87-a82b-47cd-a003-4e08759d2f3f",
+  "name": "test",
+  "contact_details": "123456789",
+  "address": "4th street, London",
+  "on_time_delivery_rate": 0.0,
+  "quality_rating_avg": 0.0,
+  "average_response_time": null,
+  "fulfillment_rate": 0.0
+}
+```
+
+### Update vendor
+`PUT /api/vendors/<vendor_code>`
+
+Existing object : 
+```json
+{
+  "vendor_code": "7af2d007-be10-4e39-b36c-a5465196bca0",
+  "name": "test vendor",
+  "contact_details": "123456789",
+  "address": "Cross Street, London",
+  "on_time_delivery_rate": 0.0,
+  "quality_rating_avg": 0.0,
+  "average_response_time": null,
+  "fulfillment_rate": 0.0
+}
+```
+`PUT /api/vendors/7af2d007-be10-4e39-b36c-a5465196bca0`
+
+request body : 
+```json
+{
+  "vendor_code": "7af2d007-be10-4e39-b36c-a5465196bca0",
+  "name": "test vendor updated",
+  "contact_details": "123456789",
+  "address": "Cross Street, 4th road London",
+  "on_time_delivery_rate": 0.0,
+  "quality_rating_avg": 0.0,
+  "average_response_time": null,
+  "fulfillment_rate": 0.0
+}
+```
+response :
+```json
+{
+  "vendor_code": "7af2d007-be10-4e39-b36c-a5465196bca0",
+  "name": "test vendor updated",
+  "contact_details": "123456789",
+  "address": "Cross Street, 4th road London",
+  "on_time_delivery_rate": 0.0,
+  "quality_rating_avg": 0.0,
+  "average_response_time": null,
+  "fulfillment_rate": 0.0
+}
+```
+### Create new purchase order
+`POST /api/purchase_orders`
+
+request body : 
+```json
+{
+  "name": "test",
+  "contact_details": "123456789",
+  "address": "4th street, London"
+}
+```
+response :
+```json
+{
+  "vendor_code": "f7b01c87-a82b-47cd-a003-4e08759d2f3f",
+  "name": "test",
+  "contact_details": "123456789",
+  "address": "4th street, London",
+  "on_time_delivery_rate": 0.0,
+  "quality_rating_avg": 0.0,
+  "average_response_time": null,
+  "fulfillment_rate": 0.0
+}
+```
+
