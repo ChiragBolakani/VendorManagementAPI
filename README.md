@@ -1,5 +1,12 @@
 # VendorManagementAPI
-This backend provides required routes to implement a Vendor Management System.
+This backend provides required routes to implement a Vendor Management System. 
+
+Key concepts used:
+- JWT Authentication
+- Django Signals
+- Class Based Views
+- Django Rest Framework Viewsets
+- Serializers
 
 It consists of the following models:
 1. Vendor
@@ -37,6 +44,9 @@ Metrics:
 - `Quality Rating:` Average of quality ratings given to a vendor’s purchase orders.
 - `Response Time:` Average time taken by a vendor to acknowledge or respond to purchase orders.
 - `Fulfilment Rate:` Percentage of purchase orders fulfilled without issues.
+
+![vmsjpg (1)](https://github.com/ChiragBolakani/VendorManagementAPI/assets/62014238/35be5ff2-f7a1-48c4-9664-03b9d7b7dcb0)
+
 
 ## Auth
 The routes are protected using JWT Authentication. You need an access token to access the endpoints. 
