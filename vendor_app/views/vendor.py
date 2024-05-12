@@ -42,4 +42,4 @@ class Vendors(ViewSet):
     def delete(self, request, format=None, **kwargs):
         vendor = Vendor.objects.get(vendor_code=self.kwargs['id'])
         vendor.delete()
-        return Response("Deleted Successfully!")
+        return Response()
