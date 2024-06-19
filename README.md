@@ -1,4 +1,6 @@
 # VendorManagementAPI
+API Base URL - http://ec2-13-233-255-18.ap-south-1.compute.amazonaws.com:8001
+
 This backend provides required routes to implement a Vendor Management System. 
 
 Key concepts used:
